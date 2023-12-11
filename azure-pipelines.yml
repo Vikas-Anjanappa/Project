@@ -23,3 +23,18 @@ stages:
 
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop1
+    
+- stage: dockerBuildandpublish
+  displayName: dockerbuildand publish
+  jobs:
+  - job: docker
+    displayName: docker
+    pool:
+      Default
+      
+    steps:  
+    - task: Docker@2
+      inputs:
+        repository: 'saivibha23'
+        command: 'buildAndPush'
+        Dockerfile: '**/backend/Dockerfile'
