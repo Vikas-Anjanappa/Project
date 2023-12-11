@@ -23,7 +23,7 @@
         <module>backend</module>
 
     </modules>
-    <repository>
+<repository>
   <id>rameshaadmn</id>
   <url>https://pkgs.dev.azure.com/rameshaadmn/_packaging/rameshaadmn/maven/v1</url>
   <releases>
@@ -33,7 +33,6 @@
     <enabled>true</enabled>
   </snapshots>
 </repository>
+   
     
-
-
 </project>
