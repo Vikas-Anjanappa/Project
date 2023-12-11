@@ -39,4 +39,4 @@ stages:
         repository: 'saivibha23'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        buildContext: 'drop1'
+        buildContext: '**'
