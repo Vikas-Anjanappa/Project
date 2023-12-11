@@ -1,15 +1,13 @@
 trigger:
 - main
-
-pool:
-  vmImage: vm1
-
 stages:
 - stage: Build
   displayName: Build stage
   jobs:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
+    pool:
+      Default
     steps:
     - task: Maven@3
       displayName: 'Maven Package'
