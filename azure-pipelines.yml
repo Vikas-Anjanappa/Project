@@ -37,5 +37,5 @@ stages:
       inputs:
         containerRegistry: 'docker'
         repository: 'saivibha23'
-        command: 'buildAndPush'
+        command: 'build'
         Dockerfile: '**/backend/Dockerfile'
