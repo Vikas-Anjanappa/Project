@@ -23,10 +23,10 @@ stages:
         cliSources: '.'
     - task: SonarQubeAnalyze@5
       inputs:
-      jdkversion: 'JAVA_HOME_11_X64'
+       jdkversion: 'JAVA_HOME_11_X64'
     - task: SonarQubePublish@5
       inputs:
-      pollingTimeoutSec: '300'
+       pollingTimeoutSec: '300'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
